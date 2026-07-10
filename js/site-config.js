@@ -1,6 +1,6 @@
 /** Stormkit 배포 URL (로컬·다른 호스트는 자동 보정) */
 window.SITE_CONFIG = {
-  baseUrl: "https://site-026.stormkit.dev",
+  baseUrl: "https://armshine-ygzcoa.stormkit.dev",
   siteName: "식물",
   slug: "site-026",
   defaultDescription:

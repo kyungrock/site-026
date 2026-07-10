@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://site-026.stormkit.dev/sitemap.xml
+Sitemap: https://armshine-ygzcoa.stormkit.dev/sitemap.xml
