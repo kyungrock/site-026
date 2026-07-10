@@ -1,0 +1,20 @@
+{
+  "slug": "site-026",
+  "site_title": "식물",
+  "site_name": "식물",
+  "tagline": "정서 · 초록 식물 보기·웰니스 정보 허브",
+  "topic": "초록 식물 보기",
+  "content_focus": "정서",
+  "blog_category": "감성힐링형",
+  "host_name": "Stormkit",
+  "host_url": "https://www.stormkit.io",
+  "host_category": "코드배포_PaaS",
+  "host_country": "글로벌",
+  "deploy_url": "https://site-026.stormkit.dev",
+  "domain": "https://site-026.stormkit.dev",
+  "keywords": "식물힐링,마사지,힐링,웰니스,셀프케어",
+  "menu": ["홈", "가이드", "블로그", "팁", "FAQ", "글쓰기"],
+  "tone": "친근·실용·정보성",
+  "target_reader": "마사지·웰니스 관심 20-50대",
+  "backlink_angle": "초록 식물 보기 관련 정보 허브"
+}

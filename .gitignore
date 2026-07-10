@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.log
+blog-draft.json
+.env
+.env.*
+node_modules/
+.stormkit/
+__pycache__/
+*.pyc
+scripts/__pycache__/

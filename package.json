@@ -1,0 +1,10 @@
+{
+  "name": "site-026",
+  "private": true,
+  "scripts": {
+    "blog:publish": "python scripts/publish_blog.py",
+    "blog:add": "python scripts/publish_blog.py --add blog-draft.json",
+    "blog:list": "python scripts/publish_blog.py --list",
+    "blog:gen": "python scripts/gen_50_posts.py && python scripts/publish_blog.py"
+  }
+}

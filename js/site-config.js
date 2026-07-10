@@ -1,0 +1,28 @@
+/** Stormkit 배포 URL (로컬·다른 호스트는 자동 보정) */
+window.SITE_CONFIG = {
+  baseUrl: "https://site-026.stormkit.dev",
+  siteName: "식물",
+  slug: "site-026",
+  defaultDescription:
+    "초록 식물 보기·정서 힐링 가이드. 마사지·웰니스·셀프케어와 함께하는 식물 감상 실용 정보 허브.",
+  locale: "ko_KR",
+  keywords: "식물힐링,마사지,힐링,웰니스,셀프케어",
+};
+
+function getSiteBase() {
+  const cfg = window.SITE_CONFIG?.baseUrl;
+  if (cfg && !location.hostname.includes("localhost") && !location.protocol.startsWith("file")) {
+    return cfg.replace(/\/$/, "");
+  }
+  const path = location.pathname.replace(/\/[^/]*$/, "");
+  return (location.origin + path).replace(/\/$/, "") || location.origin;
+}
+
+function absoluteUrl(relativePath) {
+  const base = getSiteBase();
+  const path = String(relativePath || "")
+    .replace(/^\//, "")
+    .replace(/^https?:\/\//, "");
+  if (path.startsWith("http")) return path;
+  return `${base}/${path}`;
+}

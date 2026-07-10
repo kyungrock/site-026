@@ -1,0 +1,251 @@
+/* 블로그 글쓰기·본문 (style.css 보완) */
+
+.blog-write-hero-link,
+.blog-write-hero-link .btn-blog-write {
+  margin-top: 0.75rem;
+}
+
+.btn-blog-write {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #11998e;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.btn-blog-write:hover {
+  background: #0d7a72;
+}
+
+.blog-empty-feed {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  color: #65676b;
+  margin-bottom: 16px;
+}
+
+.blog-empty-feed a {
+  color: #11998e;
+  font-weight: 600;
+}
+
+/* ── 글쓰기 페이지 ── */
+.blog-write-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.blog-write-page > h1 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-write-page .muted {
+  color: #65676b;
+  font-size: 0.9rem;
+}
+
+.blog-write-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.blog-form.card,
+.blog-preview.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.blog-form label {
+  display: block;
+  margin: 0.85rem 0 0.35rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.blog-form label:first-of-type {
+  margin-top: 0;
+}
+
+.blog-form input[type="text"],
+.blog-form input[type="date"],
+.blog-form input[type="url"],
+.blog-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e4e6eb;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.blog-form textarea {
+  min-height: 280px;
+  resize: vertical;
+  font-family: Consolas, "Malgun Gothic", monospace;
+  line-height: 1.5;
+}
+
+.blog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.blog-toolbar button {
+  padding: 6px 12px;
+  border: 1px solid #e4e6eb;
+  border-radius: 8px;
+  background: #f0f2f5;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.blog-toolbar button:hover {
+  border-color: #11998e;
+  color: #11998e;
+}
+
+.blog-link-box {
+  margin-bottom: 8px;
+  padding: 12px;
+  background: #f0f2f5;
+  border: 1px solid #e4e6eb;
+  border-radius: 8px;
+}
+
+.blog-link-box label {
+  margin-top: 0.5rem !important;
+  font-weight: 500 !important;
+}
+
+.blog-link-check {
+  display: flex !important;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 400 !important;
+}
+
+.blog-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.blog-btn-primary,
+.blog-btn-secondary,
+.blog-btn-outline {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.blog-btn-primary {
+  background: #11998e;
+  color: #fff;
+}
+
+.blog-btn-secondary {
+  background: #e6f7f4;
+  color: #11998e;
+  border-color: #11998e;
+}
+
+.blog-btn-outline {
+  background: #fff;
+  border-color: #e4e6eb;
+}
+
+.blog-status {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  display: none;
+}
+
+.blog-status.show {
+  display: block;
+}
+
+.blog-status.ok {
+  color: #11998e;
+}
+
+.blog-status.err {
+  color: #c0392b;
+}
+
+.blog-preview h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.blog-preview .article-body.muted {
+  color: #65676b;
+}
+
+.blog-help {
+  margin-top: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.blog-help h3 {
+  margin: 0 0 0.75rem;
+}
+
+.blog-help pre {
+  overflow: auto;
+  background: #f0f2f5;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.blog-help code {
+  font-size: 0.85em;
+}
+
+/* 본문 박스 */
+.blog-article-body .tip-box,
+.article-content .tip-box {
+  background: #e6f7f4;
+  border-left: 4px solid #11998e;
+  padding: 16px;
+  border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+}
+
+.blog-article-body .warn-box,
+.article-content .warn-box {
+  background: #fff3cd;
+  border-left: 4px solid #f7b928;
+  padding: 16px;
+  border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+}
+
+@media (max-width: 860px) {
+  .blog-write-layout {
+    grid-template-columns: 1fr;
+  }
+}
